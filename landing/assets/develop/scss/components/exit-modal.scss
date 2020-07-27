@@ -1,0 +1,62 @@
+.wrap{
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4!important;
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgba(0,0,0,.75);
+  .popup{
+    background: #45b29a;
+    width: 500px;
+    color: #ffffff;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    top: 40%;
+    border-radius: 30px;
+    p{
+      color: #ffffff;
+    }
+    .button{
+      color: #45b29a;
+      background: #ffffff;
+    }
+
+  }
+  .close{
+    position: absolute;
+    content: "";
+    border: 0;
+    padding: 0;
+    top: 35%;
+    right: 34%;
+    width: 20px;
+    height: 20px;
+    background: url(../img/exit-modal-close.svg) no-repeat 50%/contain;
+    @include respond(992){
+      content: '';
+      right: 12%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

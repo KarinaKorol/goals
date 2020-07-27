@@ -1,0 +1,132 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+ul{
+  list-style: none;
+}
+h1{
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 64px;
+  color: #1C1E21;
+  @include respond(768){
+    font-size: 50px;
+    line-height: 55px;
+  }
+  @include respond(480){
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @include respond(320){
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+h2{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 64px;
+  color: #45b29a;
+  @include respond(576){
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 0;
+  }
+  @include respond(480){
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  @include respond(320){
+    font-size: 25px;
+  }
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #45b29a;
+  @include respond(480){
+    font-size: 14px;
+
+  }
+}
+
+span{
+  font-family: 'Oswald', sans-serif;
+  background:linear-gradient(90.49deg, #EE0979 0.03%, #FF6A00 99.96%) ;
+  text-transform: uppercase;
+  -webkit-background-clip: text; /* Обрезаем фон по тексту */
+  -webkit-text-fill-color: transparent; /* Прозрачный текст */
+  .span-title{
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="password"], textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #e5e5e5;
+  padding: 0 10px;
+  margin: 10px 0;
+  background: #fff;
+}
+
+body {
+  background: #ffffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  height: 200px;
+  padding: 10px;
+  resize:none;
+}
+
+strong {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 600;
+}
+.show{
+  display: block;
+  @include respond(576){
+    display: none;
+  }
+}
+.hide {
+  display: none;
+  @include respond(576){
+    display: block;
+  }
+}
+.line{
+  max-width: 100px;
+  margin: 0 auto;
+  background-image: url(../img/line-bg.png);
+  height: 6px;
+  width: 100%;
+}

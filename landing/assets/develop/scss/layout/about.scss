@@ -1,0 +1,90 @@
+.about-block{
+  text-align: center;
+  img{
+    width: 200px;
+    margin: 0 auto;
+  }
+  h2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 44px;
+  }
+  h3{
+    color: #45b29a;
+    font-family: 'Dosis',sans-serif;
+  }
+  p{
+    color: #545454;
+  }
+  .about-introduction{
+    padding: 60px 0;
+    p{
+      font-family: 'Dosis',sans-serif;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  .about-do{
+    padding: 60px 0;
+    &_info{
+      flex-basis: 400px;
+      text-align: left;
+      margin-right: 10px;
+      @include respond(767){
+        flex-basis: 100%;
+        text-align: center;
+      }
+      p{
+        font-family: 'Dosis',sans-serif;
+      }
+      .circle{
+        margin-top: 20px;
+      }
+    }
+    &_thumbnail{
+      @include respond(767){
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .circle-animation{
+        animation-name: circle;
+        border-radius: 60px;
+        width: 77px;
+        height: 77px;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(1,0,0,1);
+        background-image: url(../img/dev-icons-vert.png);
+      }
+      }
+
+
+    &_item{
+      position: relative;
+    }
+  }
+}
+@keyframes circle {
+  0% {
+    background-position: 0 0;
+  }
+  5% {
+    background-position: 0 -77px;
+  }
+  35% {
+    background-position: 0 -77px;
+  }
+  40% {
+    background-position: 0 -154px;
+  }
+  68% {
+    background-position: 0 -154px;
+  }
+  73% {
+    background-position: 0 -231px;
+  }
+  100% {
+    background-position: 0 -231px;
+  }
+}
