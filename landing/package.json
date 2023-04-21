@@ -9,7 +9,7 @@
   "author": "Andrii Bai",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.29.1",
     "gulp": "^4.0.2",
     "gulp-cache": "^1.1.1",
     "gulp-concat": "^2.6.1",
